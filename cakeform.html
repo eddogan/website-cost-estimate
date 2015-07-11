@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <title>Cake Form</title>
+    <script type="text/javascript" src="js/formcalculations.js"></script>
+    <link href="styles/cakeform.css" rel="stylesheet" type="text/css" />
+</head>
+<body onload='hideTotal()'>
+    <div id="wrap">
+        <form action="" id="cakeform" onsubmit="return false;">
+        <div>
+            <div class="cont_order">
+               <fieldset>
+                <legend>Let's get you an estimate!</legend>
+                   <p>There are more than 180m active websites on the web(Jan 14). Is your website going to be unique or do you just want to copy your competitor's successful website? </p>
+                <label >What type of website do you want?</label>
+                <label class='radiolabel'><input type="radio"  name="type" value="custom" />Custom design&development</label><br/>
+                <label class='radiolabel'><input type="radio"  name="type" value="theme" />Pick a theme for me and buy it</label><br/>
+                <label class='radiolabel'><input type="radio"  name="type" value="themetwo" />Based on a theme I've already bought</label><br/>
+                <hr>
+                   <p>30% of online traffic comes from mobile devices. So your website should look good on phones and tablets also.</p>
+                <label >What type of mobile website do you want?</label>
+                <label class='radiolabel'><input type="radio"  name="mobtype" value="mobcustom" />Custom design&development</label><br/>
+                <label class='radiolabel'><input type="radio"  name="mobtype" value="mobtheme" />Based on a theme</label><br/>
+                <label class='radiolabel'><input type="radio"  name="mobtype" value="noneed" />I don't need it</label><br/>
+               <hr>
+                   <p>Setting up an eCommerce site isn't an easy task. You have a lot of options to think about and eCommerce platforms comes with configuration panels that looks like an airplane cockpit. We're here to help you. But do you need extra features such as "a specific payment gateway", "recurring subscriptions", "affiliates", "vendors", "donations" etc?</p>
+                   <p>
+               <label for='ecom' class="inlinelabel">Standard eCommerce site</label>
+               <input type="checkbox" id="ecom" name='ecom' />
+               </p>
+               <p>
+               <label for='ecom2' class="inlinelabel">eCommerce site with features</label>
+               <input type="checkbox" id="ecom2" name='ecom2' />
+               </p>
+                   <hr>
+                   <p>Membership sites are similar to eCommerce websites. There are lots of options and you need a lot to think about. You need to tell us if you want extra features such as dripping content, unlimited membership levels etc.</p>
+               <p>
+               <label for='mem' class="inlinelabel">Standard membership site</label>
+               <input type="checkbox" id="mem" name='mem' />
+               </p>
+               <p>
+               <label for='mem2' class="inlinelabel">Membership site with features</label>
+               <input type="checkbox" id="mem2" name='mem2' />
+               </p>
+                   <hr>
+               <p>The best part of the web is anything is possible. You just ask, we build(Of course it comes at a price)</p>
+               <p>
+               <label for='api' class="inlinelabel">I'm going to need custom PHP or API connections for this website.</label>
+               <input type="checkbox" id="api" name='api' />
+               </p>
+                   <hr>
+               <p>Every website needs a conversion strategy. You may want to collect emails or sell products but how are you going to do it? We can't know your business better than you, but you may not know how to make people click instead of just surfing. We can help you to create a converting website with our optimization services.</p>
+               <p>
+               <label for='con' class="inlinelabel">I'm going to need conversion optimization services</label>
+               <input type="checkbox" id="con" name='con' />
+               </p>
+                   <hr>
+               <p>Search engine rankings are important. If your website is ranked too low then you won't have visitors. We offer initial SEO services such as competitor benchmark, keywords search, meta optimization, image optimization.</p>
+               <p>
+               <label for='seo' class="inlinelabel">I'm going to need initial SEO setup</label>
+               <input type="checkbox" id="seo" name='seo' />
+               </p>
+                   <hr>
+               <p>If your website loads slowly, you'll lose visitors. And also pagespeed is another factor in your search engine rankings. A website optimized for pagespeed is a step ahead of one which isn't optimized.</p>
+               <p>
+               <label for='speed' class="inlinelabel">I'm going to need page speed optimizations</label>
+               <input type="checkbox" id="speed" name='speed' />
+               </p>
+                   <hr>
+               <p>Not all of us are literary geniuses. We can offer professional writers and editors for your website.</p>
+               <p>
+               <label for='copy' class="inlinelabel">I'm going to need copy writing</label>
+               <input type="checkbox" id="copy" name='copy' />
+               </p>
+                   <hr>
+               <p>Selecting media is an important factor in the success of a website. If your content is saying something and your media is sending another message you won't get a powerful website. With our experience we can help you in this selection, buy the stock photography for you and create custom illustrations.</p>
+               <p>
+               <label for='media' class="inlinelabel">I'm going to need you to provide media(image/video/audio).</label>
+               <input type="checkbox" id="media" name='media' />
+               </p>
+                   <hr>
+               <p>When everything seems like alright, there can still be problems. Sometimes a form doesn't do the expected action, sometimes the website looks great on chrome but not on IE. All the functions need to be tested before going live in different browsers, OS's and machines. </p>
+               <p>
+               <label for='quality' class="inlinelabel">I'm going to need you to do the quality testing.</label>
+               <input type="checkbox" id="quality" name='quality' />
+               </p>
+                   <hr>
+                <p>Each page template comes with extra work. How many do you have? For instance a simple blog has two templates. One to display single posts and another one to display all the posts.</p>
+                <label >How many page templates are you planning to have in your website?</label>
+                <label class='radiolabel'><input type="radio"  name="pt" value="one" />1-5</label><br/>
+                <label class='radiolabel'><input type="radio"  name="pt" value="six" />6-10</label><br/>
+                <label class='radiolabel'><input type="radio"  name="pt" value="eleven" />11-15</label><br/>
+                <p>You may not have too many templates but if you have too much content it will be also extra. </p>
+                <label >How many pages are you planning to have in your website?</label>
+                <label class='radiolabel'><input type="radio"  name="p" value="zero" />1-10</label><br/>
+                <label class='radiolabel'><input type="radio"  name="p" value="ten" />11-25</label><br/>
+                <label class='radiolabel'><input type="radio"  name="p" value="twentyfive" />26-50</label><br/>
+                <label class='radiolabel'><input type="radio"  name="p" value="fifty" />51-100</label><br/>
+                
+                </fieldset>
+            </div>
+            
+        	<div class="cont_details">
+            	<fieldset>
+                <legend>Contact Details</legend>
+                <label for='name'>Name</label>
+                <input type="text" id="name" name='name' />
+                <br/>
+                <label for='email'>e-mail</label>
+                <input type="email" id="email" name='email' />
+                <br/>
+                <label for='phonenumber'>Phone Number</label>
+                <input type="tel"  id="phonenumber" name='phonenumber'/>
+                <br/>
+                </fieldset>
+            </div>
+            <input type='submit' id='submit' value='Submit' onclick="calculateTotal()" />
+            <div id="totalPrice"></div>
+        </div>  
+       </form>
+	</div><!--End of wrap-->
+
+</body>
+</html>
